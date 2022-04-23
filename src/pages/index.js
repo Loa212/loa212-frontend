@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { MdMenu, MdClose } from "react-icons/md";
 
 export default function Home() {
   return (
@@ -12,64 +13,56 @@ export default function Home() {
       <main>
         <div className="drawer drawer-end">
           <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-          <div className="drawer-content flex flex-col">
+          <div className="drawer-content flex flex-col bg-slate-200">
             {/* <!-- Navbar --> */}
-            <div className="w-full navbar bg-base-300">
-              <div className="flex-1 px-2 mx-2">Navbar Title</div>
-              <div className="flex-none lg:hidden">
-                <label
-                  htmlFor="my-drawer-3"
-                  className="btn btn-square btn-ghost"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    className="inline-block w-6 h-6 stroke-current"
+            <div className="w-full navbar bg-slate-800">
+              <div className="max-w-7xl mx-auto flex items-center justify-between grow">
+                <div className="flex-1 px-2 mx-2 font-black text-3xl text-white tracking-wide">
+                  Loa212
+                </div>
+
+                <div className="flex-none lg:hidden">
+                  <label
+                    htmlFor="my-drawer-3"
+                    className="btn btn-square btn-ghost"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    ></path>
-                  </svg>
-                </label>
-              </div>
-              <div className="flex-none hidden lg:block">
-                <ul className="menu menu-horizontal">
-                  {/* <!-- Navbar menu content here --> */}
-                  <li>
-                    <a>Navbar Item 1</a>
-                  </li>
-                  <li>
-                    <a>Navbar Item 2</a>
-                  </li>
-                </ul>
+                    <MdMenu className="text-4xl text-white" />
+                  </label>
+                </div>
+                <div className="flex-none hidden lg:block">
+                  <ul className="menu menu-horizontal text-white">
+                    {/* <!-- Navbar menu content here --> */}
+                    <li>
+                      <a>Navbar Item 1</a>
+                    </li>
+                    <li>
+                      <a>Navbar Item 2</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             {/* <!-- Page content here --> */}
-            <h1 className="text-green-700 text-4xl font-bold text-center pt-8">
-              Welcome to{" "}
-              <a
-                className="underline underline-offset-2"
-                href="https://nextjs.org"
-              >
-                Next.js!
-              </a>
-            </h1>
+            <div className="max-w-7xl mx-auto ">
+              <h4></h4>
+              <h1 className="text-slate-700 text-4xl font-bold text-center pt-8">
+                Coming soon
+              </h1>
+            </div>
           </div>
           <div className="drawer-side">
             <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-            <ul className="menu p-4 overflow-y-auto w-80 bg-base-100">
+            <div className="menu p-4 overflow-y-auto w-80 bg-base-100">
               {/* <!-- Sidebar content here --> */}
-              <li>
-                <a>Sidebar Item 1</a>
-              </li>
-              <li>
-                <a>Sidebar Item 2</a>
-              </li>
-            </ul>
+              <button className="flex justify-end w-min place-self-end btn-ghost rounded-md py-2 px-4">
+                <label
+                  htmlFor="my-drawer-3"
+                  className="flex items-center text-lg"
+                >
+                  chiudi <MdClose className="text-xl" />
+                </label>
+              </button>
+            </div>
           </div>
         </div>
       </main>
