@@ -5,8 +5,8 @@ export default function Home() {
       <div className="max-w-7xl mx-auto">
         <div className="lg:grid grid-cols-3 gap-8 px-4 py-8 lg:py-14">
           <div className="lg:px-8 col-span-2">
-            <h1 className="text-5xl lg:text-6xl font-black tracking-wide text-transparent bg-clip-text loa-gradient-text">
-              Sei stanco dei soliti template?
+            <h1 className="text-5xl lg:text-6xl font-black py-4 tracking-wide text-transparent bg-clip-text loa-gradient-text">
+              Sei stanco dei soliti siti tutti uguali?
             </h1>
             <h3 className="text-xl lg:text-2xl font-medium tracking-wide opacity-60 py-4">
               La maggior parte dei siti web e delle applicazioni{" "}
