@@ -15,7 +15,7 @@ export default function LandingLayout({ children }) {
           <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content flex flex-col bg-slate-200">
             {/* <!-- Navbar --> */}
-            <div className="w-full navbar bg-slate-800">
+            <div className="w-full navbar loa-gradient-navbar">
               <div className="max-w-7xl mx-auto flex items-center justify-between grow">
                 <div className="flex-1 px-2 mx-2 font-black text-3xl text-white tracking-wide">
                   Loa212
@@ -49,7 +49,7 @@ export default function LandingLayout({ children }) {
               htmlFor="my-drawer-3"
               className="drawer-overlay backdrop-blur-[2px]"
             ></label>
-            <div className="menu p-4 overflow-y-auto w-80 bg-slate-800 text-white">
+            <div className="menu p-4 overflow-y-auto w-80 bg-slate-200 text-slate-800">
               {/* <!-- Sidebar content here --> */}
               <button className="flex justify-end w-min place-self-end btn-ghost rounded-md py-2 px-4">
                 <label

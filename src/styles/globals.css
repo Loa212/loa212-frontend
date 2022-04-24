@@ -11,3 +11,11 @@
 body {
   @apply bg-slate-200;
 }
+
+.loa-gradient-navbar {
+  @apply bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500;
+}
+
+.loa-gradient-text {
+  @apply bg-gradient-to-bl from-pink-600 via-red-600 to-yellow-500;
+}
