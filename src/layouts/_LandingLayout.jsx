@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { MdMenu, MdClose } from "react-icons/md";
+import Footer from "../components/Footer";
 
 export default function LandingLayout({ children }) {
   return (
@@ -43,6 +44,7 @@ export default function LandingLayout({ children }) {
               </div>
             </div>
             {children}
+            <Footer />
           </div>
           <div className="drawer-side">
             <label
