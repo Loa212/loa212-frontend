@@ -2,12 +2,11 @@ import Image from "next/image";
 import LoaLogo from "../../public/Logo.png";
 const Footer = () => {
   return (
-    <footer className="text-white body-font bg-slate-800">
+    <footer className="text-white body-font bg-slate-700 dark:bg-slate-900 grow-0">
       <div className="container px-10 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <div>
-          <div className="relative mx-auto w-10 h-10 ">
+          <div className="relative mx-auto w-10 h-10 bg-white rounded-full ">
             <Image
-              // src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
               src={LoaLogo}
               alt="logo Loa212"
               layout="fill"

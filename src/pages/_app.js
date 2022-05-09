@@ -1,11 +1,14 @@
 import LandingLayout from "../layouts/_LandingLayout";
 import "../styles/globals.css";
+import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <LandingLayout>
-      <Component {...pageProps} />
-    </LandingLayout>
+    <ThemeProvider attribute="class">
+      <LandingLayout>
+        <Component {...pageProps} />
+      </LandingLayout>
+    </ThemeProvider>
   );
 }
 
