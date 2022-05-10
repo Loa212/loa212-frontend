@@ -1,6 +1,8 @@
 import Image from "next/image";
 import person from "../../public/FakihAmriAbdullah.png";
 import { useTheme } from "next-themes";
+import LandingCta from "../components/LandingCta";
+import WhatIDo from "../components/WhatIDo";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -49,6 +51,7 @@ export default function Home() {
             />
           </div>
         </div>
+        <WhatIDo />
       </div>
     </div>
   );

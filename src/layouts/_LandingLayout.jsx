@@ -1,5 +1,6 @@
 import { MdMenu, MdClose } from "react-icons/md";
 import Footer from "../components/Footer";
+//import SelectLanguageComponent from "../components/SelectLanguageComponent";
 import Head from "next/head";
 import LightDarkModeSwitch from "../components/LightDarkModeSwitch";
 import { useTheme } from "next-themes";
@@ -41,10 +42,13 @@ export default function LandingLayout({ children }) {
                   </label>
                 </div>
                 <div className="flex-none hidden lg:block">
-                  <ul className="menu menu-horizontal text-white">
+                  <ul className="menu menu-horizontal items-center text-white">
                     {/* <!-- Navbar menu content here --> */}
                     <li>
-                      <a>Navbar Item 1</a>
+                      <a className="underline underline-offset-2">Portfolio</a>
+                    </li>
+                    <li>
+                      <a className="underline underline-offset-2">Contatti</a>
                     </li>
                     <li>
                       <LightDarkModeSwitch />
@@ -61,7 +65,7 @@ export default function LandingLayout({ children }) {
               htmlFor="my-drawer-3"
               className="drawer-overlay backdrop-blur-[2px]"
             ></label>
-            <div className="menu p-4 overflow-y-auto w-80 bg-slate-100 text-slate-800 dark:bg-slate-500 dark:text-white">
+            <div className="menu p-4 overflow-y-auto w-80 bg-slate-100 text-slate-800 dark:bg-slate-700 dark:text-white">
               {/* <!-- Sidebar content here --> */}
               <button className="flex justify-end w-min place-self-end btn-ghost rounded-md py-2 px-4">
                 <label
@@ -71,13 +75,13 @@ export default function LandingLayout({ children }) {
                   chiudi <MdClose className="text-xl ml-2" />
                 </label>
               </button>
-              <ul className="text-white">
+              <ul className="underline underline-offset-2 text-xl tracking-wide space-y-3 pt-8 ">
                 {/* <!-- Navbar menu content here --> */}
                 <li>
-                  <a>Navbar Item 1</a>
+                  <a className="underline underline-offset-2">Portfolio</a>
                 </li>
                 <li>
-                  <a>Navbar Item 2</a>
+                  <a className="underline underline-offset-2">Contatti</a>
                 </li>
               </ul>
             </div>
