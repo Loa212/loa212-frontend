@@ -3,9 +3,12 @@ import person from "../../public/FakihAmriAbdullah.png";
 import { useTheme } from "next-themes";
 import LandingCta from "../components/LandingCta";
 import WhatIDo from "../components/WhatIDo";
+import { useBrowserLanguage } from "../logic/BrowserLanguageProvider";
 
 export default function Home() {
   const { theme } = useTheme();
+
+  const { Language, setLanguage } = useBrowserLanguage();
 
   return (
     <div className="w-full flex-grow">

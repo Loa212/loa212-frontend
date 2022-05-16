@@ -22,10 +22,9 @@ const WhatIDo = () => {
               <h2 className="text-gray-900 dark:text-amber-100 text-lg title-font font-medium mb-2">
                 UX & UI DESIGN
               </h2>
-              <p className="leading-relaxed text-base lg:min-h-[180px]">
-                Want to improve communication with your customers? The visual
-                elements and the intuitive usability of your website help to
-                grow your business.
+              <p className="leading-relaxed text-base lg:min-h-[120px]">
+                Want to improve communication with your customers? The intuitive
+                usability of your website help to grow your business.
               </p>
               <a
                 href="#"
@@ -54,7 +53,7 @@ const WhatIDo = () => {
               <h2 className="text-gray-900 dark:text-amber-100 text-lg title-font font-medium mb-2">
                 APP DEVELOPMENT
               </h2>
-              <p className="leading-relaxed text-base lg:min-h-[180px]">
+              <p className="leading-relaxed text-base lg:min-h-[120px]">
                 Need a tailor-made app for your business? By having a mobile
                 app, your services will be at your customers&apos; fingertips.
               </p>
@@ -85,7 +84,7 @@ const WhatIDo = () => {
               <h2 className="text-gray-900 dark:text-amber-100 text-lg title-font font-medium mb-2">
                 WEB DEVELOPMENT
               </h2>
-              <p className="leading-relaxed text-base lg:min-h-[180px]">
+              <p className="leading-relaxed text-base lg:min-h-[120px]">
                 A website is one of the most important parts of a business.
                 Let&apos;s make it consistent, impressive and trustworthy for
                 your clients.

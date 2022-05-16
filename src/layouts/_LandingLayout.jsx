@@ -1,12 +1,15 @@
 import { MdMenu, MdClose } from "react-icons/md";
 import Footer from "../components/Footer";
-//import SelectLanguageComponent from "../components/SelectLanguageComponent";
 import Head from "next/head";
 import LightDarkModeSwitch from "../components/LightDarkModeSwitch";
 import { useTheme } from "next-themes";
+import { useBrowserLanguage } from "../logic/BrowserLanguageProvider";
+import LanguageSwitch from "../components/LanguageSwitch";
 
 export default function LandingLayout({ children }) {
   const { theme } = useTheme();
+  const { Language, setLanguage } = useBrowserLanguage();
+
   return (
     <>
       <Head>
@@ -53,6 +56,9 @@ export default function LandingLayout({ children }) {
                     <li>
                       <LightDarkModeSwitch />
                     </li>
+                    {/* <li>
+                      <LanguageSwitch />
+                    </li> */}
                   </ul>
                 </div>
               </div>
